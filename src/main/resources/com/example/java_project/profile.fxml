@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.MeshView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MeshView layoutX="227.0" layoutY="338.0" />
+      <Label fx:id="usernameLabel" layoutX="243.0" layoutY="158.0" prefHeight="23.0" prefWidth="154.0" text="Label" textAlignment="CENTER" />
+      <Circle fx:id="realProfileImage" fill="DODGERBLUE" layoutX="320.0" layoutY="89.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+      <VBox fx:id="vBox1" layoutX="195.0" layoutY="196.0" maxHeight="180.0" maxWidth="250.0" prefHeight="180.0" prefWidth="250.0" />
+      <ListView fx:id="postsListView" layoutX="50.0" layoutY="385.0" prefHeight="398.0" prefWidth="540.0" />
+      <ImageView fx:id="homeButton" fitHeight="33.0" fitWidth="33.0" layoutX="34.0" layoutY="28.0" onMouseClicked="#takeMeHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HomeButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="settings" fitHeight="33.0" fitWidth="33.0" layoutX="557.0" layoutY="28.0" onMouseClicked="#goToUserSettings" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@settings.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

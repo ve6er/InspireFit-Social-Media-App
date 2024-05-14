@@ -1,0 +1,26 @@
+.root{
+    -fx-background-color: #D3D3D3;
+}
+
+#welcome{
+    -fx-text-fill: "green";
+
+}
+
+.label{
+    -fx-text-fill: "white";
+}
+
+#loginButton{
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #1a570f;
+}
+
+#signupButton{
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #1a570f;
+}
+
+#error{
+    -fx-text-fill: #ec0000;
+}

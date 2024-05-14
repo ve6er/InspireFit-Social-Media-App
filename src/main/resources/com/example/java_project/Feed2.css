@@ -1,0 +1,155 @@
+/*.root {*/
+/*    -fx-font-family: 'Arial';*/
+/*    -fx-base: black;*/
+/*    background-color: #111111;*/
+/*}*/
+
+/*.label {*/
+/*    -fx-font-size: 14px;*/
+/*    -fx-text-fill: #ffffff;*/
+/*}*/
+
+/*.button {*/
+/*    -fx-background-color: linear-gradient(#4CAF50, #087f23);*/
+/*    -fx-text-fill: white;*/
+/*    -fx-background-radius: 5;*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);*/
+/*    -fx-padding: 10 20 10 20;*/
+
+/*}*/
+
+/*.button:hover {*/
+/*    -fx-background-color: linear-gradient(#5af158, #087f23);*/
+/*    -fx-scale-x: 1.1;*/
+/*    -fx-scale-y: 1.1;*/
+/*    transition: all 0.3s ease-in-out;*/
+/*    transform:rotate(45deg);*/
+/*}*/
+
+/*.addComment{*/
+/*    -fx-background-color: white;*/
+
+/*}*/
+
+/*.text-field {*/
+/*    -fx-font-size: 14px;*/
+/*    -fx-border-color: #000000;*/
+/*    -fx-border-width: 2;*/
+/*}*/
+
+/*.list-view {*/
+/*    -fx-background-color: #838080;*/
+/*    -fx-border-color: #00000;*/
+/*    -fx-border-radius: 5;*/
+/*}*/
+
+/*.vbox, .hbox {*/
+/*    -fx-spacing: 8;*/
+/*    -fx-alignment: center;*/
+/*}*/
+
+/*.anchor-pane {*/
+/*    -fx-padding: 10;*/
+/*    !*-fx-border-image-source: "E:\Java Project 3\src\main\resources\com\example\java_project\logo.jpg";*!*/
+
+/*}*/
+
+/*!* Animation for fading in elements *!*/
+/*.fade-in {*/
+/*    -fx-opacity: 0;*/
+/*    -fx-animate-opacity: 1 1s ease-out;*/
+/*    transform:rotate(45deg);*/
+/*}*/
+
+
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    background-color: #181818;
+    -fx-base: #282828;
+}
+
+.label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #ccc;
+    -fx-wrap-text: true;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #34a853, #0c7b12);
+    -fx-text-fill: #fff;
+    -fx-background-radius: 20;
+    -fx-padding: 8 15 8 15;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #37c855, #0a6b10);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-text-fill: #fff; /* White text in the text field */
+    -fx-control-inner-background: #333; /* Darker background for text field */
+    -fx-border-color: #555; /* Subtle border for text fields */
+    -fx-border-radius: 5;
+}
+
+.text-area {
+    -fx-font-size: 14px;
+    -fx-text-fill: #fff; /* Making comment text white */
+    -fx-control-inner-background: #333;
+    -fx-border-color: #555;
+    -fx-border-radius: 5;
+}
+
+.list-view {
+    -fx-background-color: #202020;
+    -fx-border-color: #404040;
+    -fx-border-radius: 5;
+}
+
+.list-cell {
+    -fx-padding: 10;
+    -fx-background-color: #282828;
+    -fx-text-fill: #ddd;
+    -fx-border-color: transparent;
+    -fx-selection-bar: #565656; /* Color when a cell is selected */
+    -fx-selection-bar-non-focused: #363636;
+}
+.anchor-pane {
+    -fx-background-image: url('logo.jpg');
+    -fx-background-size: cover;
+    /*-fx-background-position: left left;*/
+    -fx-background-repeat: no-repeat;
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:hover {
+    -fx-background-color: #1c1b1b; /* Selected cell background */
+    -fx-text-fill: #fff;
+}
+
+.vbox, .hbox {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}
+
+/* Enhancing the user experience with subtle animations on components */
+.fade-in  {
+
+        -fx-opacity: 1.0;
+
+    -fx-animation-duration: 1s;
+}
+
+/* Styling the refresh and upload buttons */
+#refreshButton, #uploadButton {
+    -fx-background-radius: 15;
+    -fx-font-size: 16px;
+}

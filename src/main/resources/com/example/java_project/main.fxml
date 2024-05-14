@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="800.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.FeedController">
+    <VBox alignment="CENTER" spacing="10" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+        <children>
+            <!-- Add a ListView to display posts -->
+            <ListView fx:id="postsListView" prefHeight="622.0" prefWidth="540.0">
+                <!-- Define the cell factory to display posts -->
+                <cellFactory>
+                    <!-- Add the cell factory implementation here -->
+                </cellFactory>
+            </ListView>
+        </children>
+    </VBox>
+    <Label fx:id="greetingLabel" layoutX="94.0" layoutY="23.0" onMouseClicked="#goToProfile" />
+    <Button fx:id="loadButton" layoutX="534.0" layoutY="19.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+    <Button fx:id="uploadButton" layoutX="254.0" layoutY="731.0" mnemonicParsing="false" onAction="#uploadPhoto" text="Upload" />
+   <ImageView fx:id="topIcon" fitHeight="40.2" fitWidth="128.0" layoutX="245.0" layoutY="6.0" onMouseClicked="#loadPosts" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@logo2.jpg" />
+      </image></ImageView>
+   <ImageView fx:id="profileImageView" fitHeight="36.0" fitWidth="36.0" layoutX="38.0" layoutY="16.0" onMouseClicked="#goToProfile" pickOnBounds="true" preserveRatio="true" />
+</AnchorPane>

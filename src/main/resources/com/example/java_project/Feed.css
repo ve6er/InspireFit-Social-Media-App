@@ -1,0 +1,18 @@
+.root{
+    -fx-background-color: #1a570f;
+}
+
+#uploadButton{
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #1a570f;
+}
+
+#postsListView{
+    -fx-background-color: #5fbe82;
+}
+
+.imageView1{
+    -fx-border-color: #62be00;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px; /* Optional: Add border radius */
+}
