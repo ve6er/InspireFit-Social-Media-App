@@ -57,7 +57,8 @@ class Post {
         }
     }
 
-    private final String apibase = "http://127.0.0.1:8000";
+    private final String apibase = "http://127.0.0.1:8000"; //You can replace this with the URL the API is running on in your system.
+    //To run the API, open the folder of the nlp_model.py file and run the following command: uvicorn nlp_model:app --reload
 
     public Boolean moderation(String comment) {
         RestTemplate restTemplate = new RestTemplate();
