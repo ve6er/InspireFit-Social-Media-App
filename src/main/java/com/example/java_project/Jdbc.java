@@ -13,10 +13,10 @@ import java.sql.SQLException;
 import static java.sql.DriverManager.getConnection;
 
 public class Jdbc {
-
-    private static final String URL = "jdbc:mysql://localhost:3306/fitness_app";
-    private static final String USER = "root"; // Update with your MySQL username
-    private static final String PASSWORD = "danny3Ric"; // Update with your MySQL password
+    //Replace the {} with the actual values
+    private static final String URL = "{URL of your SQL Server}";
+    private static final String USER = "{Name of the user in the SQL Server}"; // Update with your MySQL username
+    private static final String PASSWORD = "{Password of the server}"; // Update with your MySQL password
 
     static {
         try {
